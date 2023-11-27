@@ -69,6 +69,14 @@ class _EasyState extends State<Easy> {
             ),
           ),
           Expanded(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(oTurn ? 'O Turn' : 'X Turn', style: const TextStyle(color: Colors.cyanAccent, fontSize: 30.0),)
+                ],
+              )
+          ),
+          Expanded(
             // Creating the Board
             flex: 3,
             child: GridView.builder(
